@@ -25,6 +25,9 @@ app.use(cors({
 }));
 connectDB();
 
+app.get('/', (req, res) => {
+  res.send('Home Page')
+})
 // Middleware to parse JSON and URL-encoded data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
