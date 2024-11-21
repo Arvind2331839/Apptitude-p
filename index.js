@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const connectDB = require('./Config/db');
-const questionRoutes = require('./Routes/question');  // Corrected route import
-const adminRoutes = require('./Routes/admin');  
-const candidateRoutes = require('./Routes/user'); // Import candidate routes      // Corrected route import
+const connectDB = require('./src/Config/db');
+const questionRoutes = require('./src/Routes/question');  // Corrected route import
+const adminRoutes = require('./src/Routes/admin');  
+const candidateRoutes = require('./src/Routes/user'); // Import candidate routes      // Corrected route import
 require('dotenv').config();
 const cors = require('cors');
 const app = express();
